@@ -10,5 +10,11 @@ public class PointTest {
         System.out.println(p4);
         p4.setZ(20);
         System.out.println(p4);
+
+        Movable c = new Circle(p2, 5);
+        System.out.println(c);
+        c.moveDown();
+        c.moveRight();
+        System.out.println(c);
     }
 }

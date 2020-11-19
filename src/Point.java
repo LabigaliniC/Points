@@ -1,4 +1,4 @@
-public class Point {
+public class Point implements Movable {
     private double x;
     private double y;
 
@@ -34,5 +34,25 @@ public class Point {
                 "x=" + x +
                 ",y=" + y +
                 ']';
+    }
+
+    @Override
+    public void moveUp() {
+        y += 1;
+    }
+
+    @Override
+    public void moveDown() {
+        y -= 1;
+    }
+
+    @Override
+    public void moveLeft() {
+        x -= 1;
+    }
+
+    @Override
+    public void moveRight() {
+        x += 1;
     }
 }
